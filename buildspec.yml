@@ -14,8 +14,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling Node.js code...
-      - mocha test.js
-  post_build:
+      - npm test
     commands:
       - echo Build completed on `date`
 artifacts:
