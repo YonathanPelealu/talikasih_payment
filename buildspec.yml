@@ -17,6 +17,8 @@ phases:
       - npm test
   post_build:
     commands:
+      - echo Running Node.js
+      - npm start
       - echo Build completed on `date`
 artifacts:
   files:
