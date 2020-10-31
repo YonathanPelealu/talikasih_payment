@@ -17,10 +17,11 @@ class midtransController {
             const url_token = `${process.env.BASE_MID}/v2/token?client_key=${token_cli}&card_number=${card_number}&card_exp_month=${card_exp_month}&card_exp_year=${card_exp_year}24&card_cvv=${card_cvv}`;
             const token = await axios.get(`${url_token}`,{headers:headers})
             //charge the card
+            let orderId = token.data.token_id.slice(4,10)
             const body = {
                 "payment_type": "credit_card",
                 "transaction_details": {
-                  "order_id": `order 01`,
+                  "order_id": `${orderId}`,
                   "gross_amount": amount
                 },
                 "credit_card": {
