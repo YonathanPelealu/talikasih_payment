@@ -18,7 +18,6 @@ phases:
   post_build:
     commands:
       - echo Running Node.js
-      - npm start
 artifacts:
   files:
     - app.js
