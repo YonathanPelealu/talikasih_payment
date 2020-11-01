@@ -15,6 +15,8 @@ phases:
       - echo Build started on `date`
       - echo Compiling Node.js code...
       - npm test
+      - echo running on appserver
+      - npm start
   post_build:
     commands:
       - echo Talikasih Pay is Running Node.js
