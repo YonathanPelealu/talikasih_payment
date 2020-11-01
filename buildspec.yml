@@ -17,11 +17,8 @@ phases:
       - npm test
   post_build:
     commands:
-      - echo Running Node.js
+      - echo Talikasih Pay is Running Node.js
 artifacts:
   files:
     - app.js
     - package.json
-    - index.html
-    - node_modules/async/*
-    - node_modules/lodash/*

@@ -1,5 +1,5 @@
 {
-  "name": "Elastic-Beanstalk-Sample-App",
+  "name": "Elastic-Beanstalk-TaliKasihPay-App",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -8,7 +8,7 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "mocha"
   },
   "devDependencies": {
